@@ -1,5 +1,4 @@
 {
-  "name": "nuxt-app",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -9,12 +8,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "@types/node": "^18.17.1",
-    "nuxt": "^3.6.5"
+    "@nuxt/content": "2.3.0",
+    "@nuxtjs/tailwindcss": "6.2.0",
+    "nuxt": "3.0.0"
   },
   "dependencies": {
-    "@nuxtjs/auth-next": "5.0.0-1667386184.dfbbb54",
-    "@nuxtjs/axios": "^5.13.6"
+    "@descope/vue-sdk": "^1.0.2"
   }
 }
