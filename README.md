@@ -8,7 +8,7 @@ Look at the [Nuxt 3 documentation](https://nuxt.com) to learn more.
 
 ## Deploy Your Own
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnuxt3-kitchen-sink&project-name=nuxt3&repository-name=nuxt3&demo-title=Nuxt%203%20Kitchen%20Sink&demo-url=https%3A%2F%2Fnuxt3-kitchen-sink.vercel.app%2F&demo-image=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1673746665%2Fnuxt3_pkwbk6.png)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdescope-sample-apps%2Fnuxt-sample-app&env=DESCOPE_PROJECT_ID,DESCOPE_ACCESS_KEY,NUXT_SECRET&envDescription=You%20will%20need%20a%20Descope%20Project%20ID%20and%20Valid%20Access%20Key%20to%20use%20NuxtAuth%20with%20Descope.&envLink=https%3A%2F%2Fgithub.com%2Fdescope-sample-apps%2Fnuxt-sample-app%2Fblob%2Fmain%2FREADME.md%23installation-&project-name=descope-nuxt&repository-name=descope-nuxt)
 
 ## Table of Contents 📝
 
@@ -20,12 +20,10 @@ Look at the [Nuxt 3 documentation](https://nuxt.com) to learn more.
 ## Features ✨
 
 - **Descope Login**: Users can login with their Descope credentials.
-- **User Dashboard**: After logging in, users are redirected to a dashboard which displays their information fetched using the Descope SDK.
+- **User Dashboard**: After logging in, users are redirected to a dashboard which displays their session information.
 - **Navbar**: A navigation bar that includes a login/logout button, which adjusts its display based on whether a user is logged in or not.
 
 ## Installation 💿
-
-> **Note:** If you don't already have the Angular CLI, install it before you follow the rest of the guide. You can do so with the following command: `npm install -g @angular/cli`
 
 1. Clone the repository:
 
