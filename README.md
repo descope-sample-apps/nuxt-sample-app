@@ -2,7 +2,7 @@
 
 ---
 
-This sample app is an open-source sample app, built with Nuxt 3 and Tailwind CSS. This app also utilizes the Descope Vue SDK, to handle authentication.
+This sample app is an open-source sample app, built with Nuxt 3 and Tailwind CSS. This app utilizes the [NuxtAuth](https://github.com/sidebase/nuxt-auth), to handle authentication.
 
 Look at the [Nuxt 3 documentation](https://nuxt.com) to learn more.
 
@@ -30,48 +30,46 @@ Look at the [Nuxt 3 documentation](https://nuxt.com) to learn more.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YourUsername/descope-angular-app.git
+git clone https://github.com/descope-sample-apps/nuxt-sample-app.git
 ```
 
 2. Install dependencies:
 
 ```bash
-cd descope-angular-app
 npm install
 ```
 
 3. Setup environment variables:
 
-- Create a `environment.ts` file at the root of the project.
-- Fill in the variable `descopeProjectId` with your Project ID from [Project Settings](https://app.descope.com/settings/project) in the Console.
+Use the `.env.example` file in the repo, and change the name to `.env`. Then, fill in the following variables with your own information:
 
-```javascript
-export const environment = {
-  production: false,
-  descopeProjectId: "<Descope Project ID>",
-};
+1. **Nuxt Secret** - You must use a 32-bit generated secret. You can generate this secret by running the following command:
+
+```bash
+openssl rand -base64 32
 ```
 
-```
-git clone https://github.com/vercel/nuxt3-kitchen-sink.git
-cd nuxt3-kitchen-sink
-pnpm i
-pnpm dev
-```
+or by going to this [site](https://generate-secret.vercel.app/32).
+
+2. **Origin** - Assign this environment variable to match the correct environment you're using (e.g. `http://localhost:3000`).
+
+3. **Descope Project ID** - Descope Project ID you can find under [Project Settings](https://app.descope.com/settings/project), in the console.
+
+4. **Descope Access Key** - Access Key you can generate under [Access Keys](https://app.descope.com/accesskeys), in the console.
 
 ## Running the Application 🚀
 
 To start the application, run:
 
 ```bash
-ng serve
+npm run dev
 ```
 
-Navigate to `http://localhost:4200/` in your browser.
+Navigate to `http://localhost:3000/` in your browser.
 
 ## Issue Reporting ⚠️
 
-This project is a simple demonstration of integrating Descope into an Angular application. For any issues or suggestions, feel free to open an issue in the GitHub repository.
+This project is a simple demonstration of integrating Descope into an Nuxt 3 application. For any issues or suggestions, feel free to open an issue in the GitHub repository.
 
 ## License 📜
 

@@ -3,16 +3,19 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "start": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/content": "2.3.0",
-    "@nuxtjs/tailwindcss": "6.2.0",
-    "nuxt": "3.0.0"
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "@nuxtjs/tailwindcss": "^6.1.0",
+    "@sidebase/nuxt-auth": "^0.4.3",
+    "@types/node": "^20.5.3",
+    "nuxt": "^3.1.2",
+    "typescript": "^4.9.3"
   },
   "dependencies": {
-    "@descope/vue-sdk": "^1.0.2"
+    "lottie-web": "^5.12.2",
+    "next-auth": "^4.18.8"
   }
 }
