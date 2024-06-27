@@ -7,7 +7,7 @@ export default NuxtAuthHandler({
       id: "descope",
       name: "Descope",
       type: "oauth",
-      wellKnown: `https://api.descope.com/${process.env.DESCOPE_PROJECT_ID}/.well-known/openid-configuration`,
+      wellKnown: process.env.DESCOPE_DISCOVERY_URL,
       authorization: { params: { scope: "openid email profile" } },
       idToken: true,
       clientId: process.env.DESCOPE_PROJECT_ID,

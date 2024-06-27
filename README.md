@@ -55,6 +55,8 @@ or by going to this [site](https://generate-secret.vercel.app/32).
 
 4. **Descope Access Key** - Access Key you can generate under [Access Keys](https://app.descope.com/accesskeys), in the console.
 
+5. **Descope Discovery URL** - Can be found in your Descope Console under the [Applications page](https://app.descope.com/applications) and editing the active application
+
 ## Running the Application 🚀
 
 To start the application, run:
