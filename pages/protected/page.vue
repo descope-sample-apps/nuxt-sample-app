@@ -1,4 +1,5 @@
 <template>
+  <NavBar />
   <div
     class="font-sans antialiased bg-white dark:bg-black text-black dark:text-white grid min-h-screen place-content-center overflow-hidden"
   >
