@@ -12,6 +12,9 @@ export default defineNuxtConfig({
         global: true,
         dirs: ['~/components']
     },
+    nitro: {
+        preset: 'vercel'
+    },
     vite: {
         css: {
             preprocessorOptions: {

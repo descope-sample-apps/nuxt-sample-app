@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "server/api/**/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "buildCommand": "npm run build",
+  "outputDirectory": ".output",
+  "framework": "nuxtjs"
+}
