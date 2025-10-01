@@ -1,0 +1,1 @@
+import _ from"./Welcome.494317fb.js";import{b as o,o as n,c as t}from"./entry.c5fb6c59.js";import{_ as c}from"./_plugin-vue_export-helper.c27b6911.js";const s=o({__name:"index",setup(p){return(r,a)=>{const e=_;return n(),t(e)}}});const i=c(s,[["__scopeId","data-v-f9be2c07"]]);export{i as default};

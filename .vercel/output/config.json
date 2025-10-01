@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "overrides": {},
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/__nuxt_error",
+      "dest": "/__nitro"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/__nitro"
+    }
+  ]
+}
