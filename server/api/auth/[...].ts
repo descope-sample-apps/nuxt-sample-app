@@ -2,13 +2,22 @@ import { NuxtAuthHandler } from "#auth";
 
 export default NuxtAuthHandler({
   secret: process.env.NUXT_SECRET,
+  session: {
+    strategy: "jwt",
+    maxAge: 30 * 24 * 60 * 60, // 30 days
+  },
   providers: [
     {
       id: "descope",
       name: "Descope",
       type: "oauth",
       wellKnown: process.env.DESCOPE_DISCOVERY_URL,
-      authorization: { params: { scope: "openid email profile" } },
+      authorization: { 
+        params: { 
+          scope: "openid email profile",
+          response_type: "code"
+        } 
+      },
       idToken: true,
       clientId: process.env.DESCOPE_PROJECT_ID,
       clientSecret: process.env.DESCOPE_ACCESS_KEY,
