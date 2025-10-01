@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "lottie-web": "^5.12.2",
-    "next-auth": "^4.18.8"
+    "next-auth": "^4.18.8",
+    "oxc-parser": "^0.93.0"
   }
 }
