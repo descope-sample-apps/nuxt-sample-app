@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen h-full relative bg-gray-100 pb-20">
-    <Navbar />
+    <NavBar />
     <NuxtPage />
   </div>
 </template>
