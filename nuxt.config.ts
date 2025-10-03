@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     ],
     modules: ['@nuxtjs/tailwindcss', '@sidebase/nuxt-auth'],
     auth: {
-        origin: process.env.ORIGIN,
+        origin: process.env.ORIGIN || 'https://nuxt-sample-app.preview.descope.org',
         enableGlobalAppMiddleware: true
     }
 })
